@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Halaman admin</h1>
+    <h1>Halaman masyarakat</h1>
 </body>
 </html>
