@@ -1,6 +1,5 @@
 <?php
 include("../koneksi.php");
-
 $nik = $_POST['nik'];
 $nama = $_POST['nama'];
 $username = $_POST['username'];
