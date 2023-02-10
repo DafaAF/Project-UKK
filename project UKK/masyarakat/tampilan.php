@@ -18,7 +18,7 @@
                 Sidebar
             </div>  
             <ul>
-                <li><a class="#" href="#"><i class="fa fa-user-circle"></i> Profile</a></li>
+                <li><a class="profil" href="profil.php"><i class="fa fa-user-circle"></i> Profile<a><li>
                 <li><a class="#" href="#"><i class="fa fa-home"></i> Dashboard</a></li>
                 <li><a class="#" href="#"><i class="fa fa-shopping-basket"></i> Orders</a></li>
                 <li><a class="#" href="#"><i class="fa fa-shopping-bag"></i> Products</a></li>
