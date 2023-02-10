@@ -24,15 +24,36 @@
                 <li><a class="#" href="#"><i class="fa fa-shopping-bag"></i> Products</a></li>
             </ul>
         </div>
-       <section>
-            <img style=" position :relative; top : 50%; left : 50%; transform : translate(-50%, -50%);" class="justify-content-center" src="../img/pengaduan pelaporan masyarakar.png" alt="">
+       
+       <section class= "section">
+            <!-- <img class="image"  class="justify-content-center" src="../img/pengaduan pelaporan masyarakar.png" alt=""> -->
         </section>
     </main>
 </body>
 </html>
 
 
-<style>
+<style> 
+.section {
+    background-image : url("../img/pengaduan pelaporan masyarakar.png");
+    background-position: 25%;
+    background-position: 70% 25%;
+    background-size: revert;
+    background-repeat: no-repeat;
+
+}
+     .image {
+    width : 80%; margin-left : 50vh
+  }
+    @media only screen and (max-width:1080px) {
+ .section {
+    background-position: 25%;
+    background-position: 110% 25%;
+    background-size: revert;
+    background-repeat: no-repeat;
+
+  }
+}
   body {
     margin: 0;
     font-family: 'Times New Roman' , Times, serif;
