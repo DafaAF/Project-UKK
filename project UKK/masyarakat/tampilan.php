@@ -1,3 +1,11 @@
+<?php
+    // include('session_login.php');
+    include('session.php');
+    // $username = $_SESSION['username'];
+    // $password = $_SESSION['password'];
+    // var_dump($username);
+    // var_dump($password);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +13,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+<style>
+    .decoration{
+        text-decoration:none;
+    }
+</style>
 <body>
     <main>
         <input type="checkbox" id="check">
@@ -18,10 +32,9 @@
                 Sidebar
             </div>  
             <ul>
-                <li><a class="profil" href="profil.php"><i class="fa fa-user-circle"></i> Profile<a><li>
-                <li><a class="#" href="#"><i class="fa fa-home"></i> Dashboard</a></li>
-                <li><a class="#" href="#"><i class="fa fa-shopping-basket"></i> Orders</a></li>
-                <li><a class="#" href="#"><i class="fa fa-shopping-bag"></i> Products</a></li>
+                <li><a class="decoration" href="profil.php"><i class="fa fa-user-circle"></i> Profile<a><li>
+                <li><a class="decoration" href="isi_laporan.php"><i class="fa fa-home"></i> Isi Laporan</a></li>
+                <li><a class="decoration" href="log-out.php"><i class="bx bx-log-out"></i> Log-Out</a></li>
             </ul>
         </div>
        

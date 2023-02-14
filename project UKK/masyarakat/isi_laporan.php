@@ -5,30 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    <title>REGISTER</title>
+    <title>admin page</title>
      <!-- custum css file link -->
-
 </head>
 <style>
     body{
-        background-image: url('https://images8.alphacoders.com/454/454579.jpg');
+        background-image: url('../img/background.jpg');
         background-repeat: no-repeat;
-    }
+        }
 </style>
 <body>
-    
-<div class="form-container py-auto d-flex justify-content-center algin-items-center h-100"> 
-    <form action="proses_masyarakat.php"method="post">
-        <h3>REGISTER MASYARAKAT</h3>
-        <input type="number" name="nik" required placeholder= "enter your nik">
-        <input type="nama" name="nama" required placeholder= "enter your name">
-        <input type="username" name="username" required placeholder= "enter your username">
-        <input type="password" name="password" required placeholder= "enter your password">
-        <input type="number" name="telp" required placeholder= "enter your telp">
-        <input type="submit" name="submit" value="register now" class="form-btn">
-        <p>already have an account?<a href="login_1.php">login now</a></p>
-</form>
-</div>
+    <!-- <img src="https://i0.wp.com/kominfo.cilacapkab.go.id/wp-content/uploads/2019/12/background-hd-wallpaper-batik-biru-scaled.jpg?ssl=1" alt=""> -->
+    <div class="form-container py-auto d-flex justify-content-center algin-items-center h-100">
+        <form action="proses_login.php" method="post">
+            <h3>Laporan Masyarakat</h3>
+            <input type="date" name="tgl_pengaduan" required placeholder= "enter your date">
+            <input type="number" name="nik" required placeholder= "enter your nik">
+            <input type="text" name="isi_laporan" required placeholder= "enter your isi laporan">
+            <input class="form-control form-control-sm" id="formFileSm" type="file">
+            <input type="text" name="isi_laporan " required placeholder= "enter your isi status">
+            <input type="submit" name="submit" value="submit"  class="form-btn">
+        </form>
+    </div>
 </body>
 </html>
 <style>

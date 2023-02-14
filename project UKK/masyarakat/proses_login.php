@@ -9,8 +9,8 @@
     $data = $query->fetch(); // ubah ke bentuk array
     if($data!=(false))
     {
-        $_SESSION["username"] = $_POST["username"];
-        $_SESSION["password"] = $_POST["password"];
+        $_SESSION["username"] = $username;
+        $_SESSION["password"] = $password;
         header("Location:tampilan.php") ;
     }
     // if($dataArray){
@@ -19,7 +19,8 @@
     //     header("tampilan.php");
     // }
     else{
-        header("Location:login_1.html");
-        
+        header("Location:login_1.php");
+
+        echo"<script>alert('Maaf Data Yang Anda Masukan Salah. Silahkan Cobla Lagi!!')</script>";
     }
     ?>

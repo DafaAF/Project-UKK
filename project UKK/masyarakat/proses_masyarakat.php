@@ -8,6 +8,6 @@ $telp = $_POST['telp'];
 
 $query = $db->query("INSERT INTO masyarakat VALUES('$nik','$nama','$username','$password','$telp')");
 
-header("Location:login_1.html");
+header("Location:login_1.php");
 
 ?>
