@@ -14,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <style>
     .decoration{
@@ -32,14 +33,23 @@
                 Sidebar
             </div>  
             <ul>
-                <li><a class="decoration" href="profil.php"><i class="fa fa-user-circle"></i> Profile<a><li>
                 <li><a class="decoration" href="isi_laporan.php"><i class="fa fa-home"></i> Isi Laporan</a></li>
+                <li><a class="decoration" href="data.php"><i class="fa fa-user-circle"></i> Data<a><li>
                 <li><a class="decoration" href="log-out.php"><i class="bx bx-log-out"></i> Log-Out</a></li>
             </ul>
         </div>
        
        <section class= "section">
-            <!-- <img class="image"  class="justify-content-center" src="../img/pengaduan pelaporan masyarakar.png" alt=""> -->
+        <div class="container">
+                <div class="profil" data-tilt>
+                    <img src="../img/profil.jpg" style="border-radius: 50%;">
+                    <h2>Profile</h2>
+                    <p>Selamat Datang Di Profile Anda</p>
+                </div>
+            </div>
+            </div>
+            <script src="../img/vanilla-tilt.js"> 
+            </script>
         </section>
     </main>
 </body>
@@ -50,7 +60,7 @@
 .section {
     background-image : url("../img/pengaduan pelaporan masyarakar.png");
     background-position: 25%;
-    background-position: 70% 25%;
+    background-position: 60% 25%;
     background-size: revert;
     background-repeat: no-repeat;
 

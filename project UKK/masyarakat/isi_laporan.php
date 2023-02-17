@@ -17,13 +17,11 @@
 <body>
     <!-- <img src="https://i0.wp.com/kominfo.cilacapkab.go.id/wp-content/uploads/2019/12/background-hd-wallpaper-batik-biru-scaled.jpg?ssl=1" alt=""> -->
     <div class="form-container py-auto d-flex justify-content-center algin-items-center h-100">
-        <form action="proses_login.php" method="post">
+        <form action="proses_laporan.php" method="post" enctype="multipart/form-data">
             <h3>Laporan Masyarakat</h3>
             <input type="date" name="tgl_pengaduan" required placeholder= "enter your date">
-            <input type="number" name="nik" required placeholder= "enter your nik">
-            <input type="text" name="isi_laporan" required placeholder= "enter your isi laporan">
-            <input class="form-control form-control-sm" id="formFileSm" type="file">
-            <input type="text" name="isi_laporan " required placeholder= "enter your isi status">
+            <input type="text" name="isi_laporan"id="" cols="30" rows="10" required placeholder= "enter your isi laporan">
+            <input type="file" name="foto" class="form-control form-control-sm" id="formFileSm">
             <input type="submit" name="submit" value="submit"  class="form-btn">
         </form>
     </div>

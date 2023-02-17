@@ -11,6 +11,7 @@
     {
         $_SESSION["username"] = $username;
         $_SESSION["password"] = $password;
+        $_SESSION["nik"] = $data["nik"];
         header("Location:tampilan.php") ;
     }
     // if($dataArray){
