@@ -23,6 +23,8 @@
             <input type="text" name="isi_laporan"id="" cols="30" rows="10" required placeholder= "enter your isi laporan">
             <input type="file" name="foto" class="form-control form-control-sm" id="formFileSm">
             <input type="submit" name="submit" value="submit"  class="form-btn">
+            <a type="btn btn-secondary" class="btn btn-secondary" href="tampilan.php">back</a>
+
         </form>
     </div>
 </body>
