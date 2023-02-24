@@ -1,3 +1,10 @@
+<?php
+include('../koneksi.php');
+$id_pengaduan =$_GET['id_pengaduan'];
+$query = $db->query("SELECT * FROM pengaduan Where id_pengaduan='$id_pengaduan'");
+$data = $query->fetch();
+
+?>
 <!DOCTYPE html style ="width:100;">
 <html lang="en">
 <head>
@@ -18,11 +25,11 @@
 <body>
     <!-- <img src="https://i0.wp.com/kominfo.cilacapkab.go.id/wp-content/uploads/2019/12/background-hd-wallpaper-batik-biru-scaled.jpg?ssl=1" alt=""> -->
     <div class="form-container py-auto d-flex justify-content-center algin-items-center h-100">
-        <form action="proses_laporan.php" method="post" enctype="multipart/form-data">
-            <h3>Laporan Masyarakat</h3>
-            <input type="date" name="tgl_pengaduan" required placeholder= "enter your date">
-            <input type="text" name="isi_laporan"id="" cols="30" rows="10" required placeholder= "enter your isi laporan">
-            <input type="file" name="foto" class="form-control form-control-sm" id="formFileSm">
+        <form action="proses_update.php?id_pengaduan=<?=$id_pengaduan?>" method="post" enctype="multipart/form-data">
+            <h3>Update Laporan Masyarakat</h3>
+            <input type="hidden" name="id" value="<?= $data['id_pengaduan'] ?>">
+            <textarea name="isi_laporan" type="text" cols="50" rows="10"><?php echo $data['isi_laporan']?></textarea>  
+            <input placeholder="UPDATE FOTO" type="file" name="foto" value="<?= $data['foto'] ?>"class="form-control my-auto" id="floatingInput">
             <input type="submit" name="submit" value="submit"  class="form-btn">
             <a href="tampilan.php" class="btn btn-primary mb-3">
             <i class="fa fa-hand-o-left"></i>
