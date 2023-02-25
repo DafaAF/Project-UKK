@@ -5,32 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    <title>REGISTER</title>
+    <title>admin page</title>
      <!-- custum css file link -->
 </head>
 <style>
     body{
         background-image: url('https://img.freepik.com/free-photo/black-concrete-wall_24972-1046.jpg?w=740&t=st=1677293141~exp=1677293741~hmac=021aa60573618f7d96bfc765c6614fe914155bcb2fd35983c0a5438b88ab0470');
         background-repeat: no-repeat;
-    }
+        }
 </style>
 <body>
-    
-<div class="form-container py-auto d-flex justify-content-center algin-items-center h-100"> 
-    <form action="proses_register.php"method="post">
-        <h3>REGISTER ADMIN</h3>
-        <input type="text" name="id_petugas" required placeholder= "enter your id">
-        <input type="text" name="nama_petugas" required placeholder= "enter your name">
-        <input type="text" name="username" required placeholder= "enter your username">
-        <input type="password" name="password" required placeholder= "enter your password">
-        <input type="number" name="telp" required placeholder= "enter your telephone">
-        <label for="admin"></label>
-        <!-- <select id="level"> -->
-        <!-- <option value="admin"></option> -->
-        <input type="submit" name="submit" value="register now" class="form-btn">
-        <p>already have an account?<a href="login.php">login now</a></p>
-</form>
-</div>
+    <!-- <img src="https://i0.wp.com/kominfo.cilacapkab.go.id/wp-content/uploads/2019/12/background-hd-wallpaper-batik-biru-scaled.jpg?ssl=1" alt=""> -->
+    <div class="form-container py-auto d-flex justify-content-center algin-items-center h-100">
+        <form action="proses_login.php" method="post">
+            <h3>login Admin/Petugas</h3>
+            <input type="text" name="username" required placeholder= "enter your username">
+            <input type="password" name="password" required placeholder= "enter your password">
+            <input type="submit" name="submit" value="login now" class="form-btn">
+            <p>already have an account?</p>
+            <p><a href="register_admin.html">REGISTER </a></p>
+        </form>
+    </div>
 </body>
 </html>
 <style>
