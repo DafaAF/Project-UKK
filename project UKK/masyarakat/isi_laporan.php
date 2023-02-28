@@ -21,7 +21,7 @@
         <form action="proses_laporan.php" method="post" enctype="multipart/form-data">
             <h3>Laporan Masyarakat</h3>
             <input type="date" name="tgl_pengaduan" required placeholder= "enter your date">
-            <input type="text" name="isi_laporan"id="" cols="30" rows="10" required placeholder= "enter your isi laporan">
+            <textarea cols="62" rows="10" type="text" name="isi_laporan"id="" cols="30" rows="10" required placeholder= "enter your isi laporan"></textarea>
             <input required type="file" name="foto" class="form-control form-control-sm" id="formFileSm">
             <input type="submit" name="submit" value="submit"  class="form-btn">
             <a href="tampilan.php" class="btn btn-primary mb-3">

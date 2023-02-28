@@ -43,7 +43,7 @@
         <div class="container">
                 <div class="profil" data-tilt>
                     <img src="../img/profil.jpg" style="border-radius: 50%;">
-                    <h2>Profile</h2>
+                    <h2>Profile Masyarakat</h2>
                     <p>Selamat Datang Di Profile <?= strtoupper($_SESSION['username']); ?></p>
                 </div>
             </div>
