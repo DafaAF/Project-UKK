@@ -8,7 +8,7 @@ $isi_laporan   =$_POST['isi_laporan'];
 $foto_name          =$_FILES['foto']['name'];
 $foto_temp          =$_FILES['foto']['tmp_name'];
 $folder = "../img_laporan/" . $foto_name;
-$status        ='0';
+$status        ='proses';
 
 $cek = $db->query("select * from pengaduan where foto ='$foto_temp'");
 if($cek){

@@ -1,10 +1,8 @@
 <?php
-    // include('session_login.php');
+    include('../koneksi.php');
     include('session.php');
-    // $username = $_SESSION['username'];
-    // $password = $_SESSION['password'];
-    // var_dump($username);
-    // var_dump($password);
+    // session_start();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,8 +31,8 @@
                 Sidebar
             </div>  
             <ul>
-                <li><a class="decoration" href="verifikasi.php"><i class="fa fa-home"></i> Verifikasi</a></li>
-                <li><a class="decoration" href="tanggapan.php"><i class="fa fa-user-circle"></i> Tanggapan<a><li>
+                <!-- <li><a class="decoration" href="verifikasi.php"><i class="fa fa-home"></i> Verifikasi</a></li> -->
+                <li><a class="decoration" href="tanggapan.php"><i class="fa fa-user-circle"></i>VER&TANG<a><li>
                 <li><a class="decoration" href="log-out.php"><i class="bx bx-log-out"></i> Log-Out</a></li>
             </ul>
         </div>

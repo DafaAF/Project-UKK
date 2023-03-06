@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html style ="width:100;">
 <html lang="en">
 <head>

@@ -60,6 +60,7 @@ $data = $db->query("select * from `pengaduan` where id_pengaduan= '$id_pengaduan
                     </tr> -->
                 </tbody>
             </table>
+            <a href="data.php" type="button" class="btn btn-danger">back</a>
         </div>
             <h1>TANGGAPAN</h1>
             <div class="table-responsive">
